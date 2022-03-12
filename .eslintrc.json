@@ -8,8 +8,8 @@
     "airbnb-typescript",
     "airbnb",
     "plugin:import/typescript",
-    "plugin:prettier/recommended",
-    "plugin:react/recommended"
+    "plugin:prettier/recommended"
+    // "plugin:react/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -26,11 +26,11 @@
     "comma-dangle": [
       "error",
       {
-        "arrays": "always",
-        "objects": "always",
-        "imports": "never",
-        "exports": "never",
-        "functions": "never"
+        "arrays": "ignore",
+        "objects": "ignore",
+        "imports": "ignore",
+        "exports": "ignore",
+        "functions": "ignore"
       }
     ],
     "@typescript-eslint/quotes": ["error", "double", { "avoidEscape": true }],
@@ -51,6 +51,7 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
   }
 }
