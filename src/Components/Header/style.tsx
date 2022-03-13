@@ -4,6 +4,8 @@ import styled from "@emotion/styled";
 import devices from "helpers/devices";
 
 const Wrapper = styled.div`
+  position: fixed;
+  background-color: #ffffff;
   top: 0;
   width: 100%;
   height: 80px;
@@ -12,10 +14,6 @@ const Wrapper = styled.div`
   ${devices.small} {
     position: static;
     background-color: #ff0000;
-  }
-  ${devices.medium} {
-    position: fixed;
-    background-color: #ffffff;
   }
 `;
 

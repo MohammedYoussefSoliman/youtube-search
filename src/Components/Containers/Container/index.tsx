@@ -34,7 +34,7 @@ const containerWidths = {
   medium: {
     xSmall: "100%",
     small: "460px",
-    medium: "640px%",
+    medium: "640px",
     large: "900px",
     xLarge: "1200px",
     xxLarge: "1520px",
@@ -42,7 +42,7 @@ const containerWidths = {
   normal: {
     xSmall: "100%",
     small: "420px",
-    medium: "600px%",
+    medium: "600px",
     large: "840px",
     xLarge: "1150px",
     xxLarge: "1150px",
