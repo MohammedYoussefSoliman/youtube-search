@@ -1,7 +1,7 @@
 import React from "react";
 import useBreakPoints from "app/hooks/useBreakPoints";
 import { Flex, Container } from "@components/Containers";
-import Filter from "@components/Filter";
+import Search from "@components/Search";
 import { LogoTexted, Logo } from "@assets/svgs";
 import Wrapper from "./style";
 
@@ -22,7 +22,7 @@ export default function Header() {
             <LogoTexted size={180} />
           )}
           <Flex flex={1}>
-            <Filter />
+            <Search />
           </Flex>
         </Flex>
       </Container>
