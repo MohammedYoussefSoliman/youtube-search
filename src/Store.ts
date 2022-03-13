@@ -1,6 +1,9 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
+import searchParamsSlice from "app/State";
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({
+  searchParams: searchParamsSlice,
+});
 
 export const store = configureStore({
   reducer: rootReducer,
