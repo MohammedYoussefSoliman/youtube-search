@@ -1,4 +1,4 @@
-type ParamsType = {
+export type ParamsType = {
   part: "snippet";
   order:
     | "searchSortUnspecified"
@@ -12,4 +12,15 @@ type ParamsType = {
   q: string;
 };
 
-export default ParamsType;
+type VideoType = {
+  id: string;
+  kind: string;
+  title: string;
+  publishedAt: string;
+  description: string;
+  channelTitle: string;
+};
+
+export type VideosState = {
+  videos: VideoType[];
+};

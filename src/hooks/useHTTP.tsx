@@ -16,8 +16,9 @@ type IApiConfig = {
 
 type IProps = <T>(config: IApiConfig) => {
   isLoading: boolean;
+  isSubmitting: boolean;
   data: T | undefined;
-  error: boolean;
+  error: any;
   call: (data?: any) => Promise<any>;
 };
 

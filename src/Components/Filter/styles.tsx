@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import devices from "helpers/devices";
 // import CSS from "csstype";
 // import { css } from "@emotion/react";
 
@@ -13,6 +14,18 @@ export const Wrapper = styled.div`
   &:hover {
     border: 1px solid #707070;
   }
+  ${devices.small} {
+    border: none;
+    &:focus-within {
+      border: 1px solid #ffffff;
+    }
+    &:hover {
+      border: 1px solid #ffffff;
+    }
+  }
+  ${devices.xSmall} {
+    flex: unset;
+  }
   .filter--input {
     flex: 1;
     border: none;
@@ -21,6 +34,14 @@ export const Wrapper = styled.div`
     &:focus {
       outline: 1px solid #707070;
       box-shadow: rgba(14, 85, 240, 0.671) 0px 0px 1px 1px inset;
+    }
+    ${devices.small} {
+      color: #ffffff;
+      background: transparent;
+      &:focus {
+        outline: 1px solid #ffffff;
+        box-shadow: rgba(255, 255, 255, 0.671) 0px 0px 1px 1px inset;
+      }
     }
   }
 `;
@@ -38,5 +59,12 @@ export const SearchButton = styled.button`
   cursor: pointer;
   &:hover {
     background-color: #dddddd;
+  }
+  ${devices.small} {
+    background: transparent;
+    padding: 8px;
+    &:hover {
+      background: transparent;
+    }
   }
 `;

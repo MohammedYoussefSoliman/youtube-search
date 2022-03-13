@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import searchParamsSlice from "app/State";
+import searchParamsSlice from "app/State/searchParamsSlice";
 
 const rootReducer = combineReducers({
   searchParams: searchParamsSlice,
@@ -9,7 +9,5 @@ export const store = configureStore({
   reducer: rootReducer,
 });
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>;
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
 export type AppDispatch = typeof store.dispatch;
